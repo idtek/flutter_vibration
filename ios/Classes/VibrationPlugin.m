@@ -12,10 +12,10 @@
 - (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {
 	BOOL isDevice = TARGET_OS_SIMULATOR == 0;
   if ([@"hasVibrator" isEqualToString:call.method]) {
-    result(isDevice);
+    result(@(isDevice));
   } 
   else if ([@"hasAmplitudeControl" isEqualToString:call.method]) {
-	result(isDevice);
+	result(@(isDevice));
   }
   else if ([@"vibrate" isEqualToString:call.method]) {
 	AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
