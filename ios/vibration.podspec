@@ -8,15 +8,13 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 Handle vibration on iOS and Android
                        DESC
-  s.homepage         = 'https://github.com/benjamindean/flutter_vibration'
+  s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Benjamin Dean' => 'email@example.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-
-  s.swift_version = '4.0'
   s.ios.deployment_target = '8.0'
 end
 
